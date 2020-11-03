@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get '/', controller: 'welcome', action: 'index'
+  # get '/', controller: 'welcome', action: 'index'
+  root to: 'welcome#index'
   resources :coins
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
